@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shilfa Catherine | Student Web Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Shilfa Catherine — Computer Science Student &amp; Aspiring Web Developer crafting clear, accessible, and responsive websites with pure HTML, CSS, and Vanilla JavaScript.">
+  <meta name="author" content="Shilfa Catherine">
+  <meta name="keywords"
+    content="Shilfa Catherine, Student Web Developer, Computer Science, JavaScript, HTML5, CSS3, Responsive Design, Web Accessibility, Portfolio">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shilfacatherine.dev/">
+  <meta property="og:title" content="Shilfa Catherine | Student Web Developer Portfolio">
+  <meta property="og:description"
+    content="Clear, responsive, and accessible web projects handcrafted using pure HTML5, modern CSS3, and Vanilla JavaScript.">
+  <meta property="og:image" content="images/profile.jpg">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Shilfa Catherine | Student Web Developer Portfolio">
+  <meta name="twitter:description"
+    content="Clear, responsive, and accessible web projects handcrafted using pure HTML5, modern CSS3, and Vanilla JavaScript.">
+  <meta name="twitter:image" content="images/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23a855f7'/><text x='50%' y='62%' font-size='50' font-family='sans-serif' font-weight='900' fill='%23ffffff' text-anchor='middle'>SC</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       1. NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Shilfa Catherine Homepage">
+        <span class="brand-badge" aria-hidden="true">SC</span>
+        <span class="brand-text">SHILFA CATHERINE</span>
+      </a>
+
+      <nav class="nav-links" id="primary-nav-links" role="navigation" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch to light theme"
+          title="Toggle color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        </button>
+
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open Navigation Menu" aria-expanded="false"
+          aria-controls="primary-nav-links">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ==========================================================================
+         2. HERO SECTION
+         ========================================================================== -->
+    <section id="home" class="hero-section" aria-label="Introduction">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>Computer Science Student &bull; Aspiring Web Developer</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="highlight">SHILFA CATHERINE</span>.
+            </h1>
+
+            <div class="role-rotator-wrapper" aria-label="Role">
+              <span id="typing-role">Computer Science Student</span>
+              <span class="typing-cursor" aria-hidden="true"></span>
+            </div>
+
+            <p class="hero-lead">
+              I am a passionate Computer Science student dedicated to building clean, accessible, and responsive
+              websites using foundational web technologies—semantic HTML5, modern CSS3, and Vanilla JavaScript.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                View My Projects
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                Contact Me
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="social-links" aria-label="Professional Profiles">
+              <a href="https://github.com/shilfacatherine" class="social-link" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </a>
+              <a href="https://linkedin.com/in/shilfa-catherine" class="social-link" target="_blank"
+                rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+              <a href="mailto:contact@shilfacatherine.dev" class="social-link"
+                aria-label="Send Email to Shilfa Catherine">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Profile Visual -->
+          <div class="hero-visual">
+            <div class="hero-image-wrapper">
+              <div class="hero-image-glow" aria-hidden="true"></div>
+              <img src="images/profile.jpg" alt="Shilfa Catherine - Student Web Developer Portrait"
+                class="hero-profile-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. ABOUT ME SECTION
+         ========================================================================== -->
+    <section id="about" class="section" aria-label="About Shilfa Catherine">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Introduction</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-description">
+            A Computer Science student focused on learning the core foundations of the web and crafting clean, usable
+            digital experiences.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-column">
+            <p class="about-paragraph">
+              Hello! I'm <strong>Shilfa Catherine</strong>, an undergraduate Computer Science student with a passionate
+              focus on frontend web development. I believe that understanding the core building blocks of the web—HTML,
+              CSS, and modern JavaScript—is the most reliable way to become an effective, adaptable software developer.
+            </p>
+            <p class="about-paragraph">
+              Throughout my coursework and personal projects, I enjoy creating websites that look great, adapt smoothly
+              across desktop and mobile screens, and are accessible to everyone. Rather than relying on heavy templates
+              or complex frameworks, I focus on writing clear, readable code and understanding how the browser renders
+              every element.
+            </p>
+            <p class="about-paragraph">
+              I am actively looking for internship opportunities and collaborative web projects where I can contribute
+              my enthusiasm, apply modern web standards, and continue growing as a developer.
+            </p>
+          </div>
+
+          <div class="about-cards-column">
+            <div class="feature-card">
+              <div class="feature-card-header">
+                <div class="feature-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="m18 16 4-4-4-4" />
+                    <path d="m6 8-4 4 4 4" />
+                    <path d="m14.5 4-5 16" />
+                  </svg>
+                </div>
+                <h3 class="feature-title">Core Web Standards</h3>
+              </div>
+              <p class="feature-desc">
+                Writing semantic HTML5 markup, responsive layouts using CSS Grid and Flexbox, and modular ES6+
+                JavaScript with zero external frameworks.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-header">
+                <div class="feature-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="m9 12 2 2 4-4" />
+                  </svg>
+                </div>
+                <h3 class="feature-title">Accessibility &amp; Usability</h3>
+              </div>
+              <p class="feature-desc">
+                Prioritizing keyboard navigation, visible focus indicators, readable contrast ratios (WCAG AA), and
+                descriptive labels for assistive technology.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-header">
+                <div class="feature-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                  </svg>
+                </div>
+                <h3 class="feature-title">Continuous Growth</h3>
+              </div>
+              <p class="feature-desc">
+                Curious and persistent learner experimenting with browser Web APIs, state management in pure JavaScript,
+                and clean coding best practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. TECHNICAL SKILLS SECTION
+         ========================================================================== -->
+    <section id="skills" class="section" aria-label="Technical Skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Skills &amp; Learning</h2>
+          <p class="section-description">
+            Organized by discipline. Practical, honest technologies and concepts I have learned and applied in my
+            projects.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- WEB DEVELOPMENT -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">
+              <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="14" x="2" y="3" rx="2" />
+                <line x1="8" x2="16" y1="21" y2="21" />
+                <line x1="12" x2="12" y1="17" y2="21" />
+              </svg>
+              Web Development
+            </h3>
+            <ul class="skills-list">
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2L2 5l1.8 14.2L12 22l8.2-2.8L22 5l-10-3zm6.3 5.4l-.3 2.6H8.2l.2 1.9h9.3l-.6 6.1-5.1 1.4-5.1-1.4-.3-3.8h2.6l.2 1.8 2.6.7 2.6-.7.3-3.2H5.8L5.2 7.4h13.1z" />
+                </svg>
+                <span>HTML5 (Semantic)</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2L2 5l1.8 14.2L12 22l8.2-2.8L22 5l-10-3zm6.4 5.3l-.3 2.7h-9.7l.2 1.9h9.2l-.7 6.1-5.1 1.4-5.1-1.4-.3-3.8h2.6l.2 1.8 2.6.7 2.6-.7.3-3.2H5.9L5.3 7.3h13.1z" />
+                </svg>
+                <span>CSS3 &amp; Custom Properties</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M3 3h18v18H3V3zm13.7 13.9c.7 0 1.2-.2 1.6-.7.4-.5.6-1.1.6-1.9v-5.8h-2.1v5.6c0 .4-.1.7-.2.9-.1.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.1-.2-.2-.5-.2-.9V8.5h-2.1v5.8c0 .8.2 1.4.6 1.9.4.5.9.7 1.6.7zM9.5 16.9c.8 0 1.4-.3 1.8-.8.4-.5.6-1.3.6-2.2v-5.4H9.8v5.2c0 .4-.1.7-.2.9-.1.2-.3.3-.6.3-.3 0-.5-.1-.7-.3-.1-.2-.2-.5-.2-.9V8.5H6.1v5.4c0 .9.2 1.7.7 2.2.4.5 1.1.8 1.9.8z" />
+                </svg>
+                <span>JavaScript (ES6+)</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <rect width="18" height="18" x="3" y="3" rx="2" />
+                  <path d="M3 9h18M9 21V9" />
+                </svg>
+                <span>CSS Grid &amp; Flexbox</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m15 9-6 6M9 9h6v6" />
+                </svg>
+                <span>DOM Manipulation &amp; Events</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                <span>Web Accessibility (A11y)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- DESIGN & LAYOUT -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">
+              <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                <path d="M2 12h20" />
+              </svg>
+              Design &amp; Layout
+            </h3>
+            <ul class="skills-list">
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <rect width="20" height="14" x="2" y="3" rx="2" />
+                  <line x1="8" x2="16" y1="21" y2="21" />
+                  <line x1="12" x2="12" y1="17" y2="21" />
+                </svg>
+                <span>Responsive Web Design</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m10 15 5-3-5-3v6Z" />
+                </svg>
+                <span>Color Theory &amp; Contrast</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <rect width="18" height="18" x="3" y="3" rx="2" />
+                  <path d="M9 3v18M15 3v18" />
+                </svg>
+                <span>Wireframing &amp; Spacing</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M4 7V4h16v3M4 12v-2h16v2M4 17v-2h16v2M4 20h16" />
+                </svg>
+                <span>Fluid Typography</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 3a6 6 0 0 0 9 9 9 0 1 1-9-9Z" />
+                </svg>
+                <span>Dark &amp; Light Theming</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- TOOLS & WORKFLOW -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">
+              <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+              Tools &amp; Workflow
+            </h3>
+            <ul class="skills-list">
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M2.6 10.59 8.38 4.8a2.53 2.53 0 0 1 3.58 0l1.45 1.45-2.2 2.2a2.38 2.38 0 0 0-2.3 2.3 2.36 2.36 0 0 0 .52 1.46l-2.07 2.07A2.34 2.34 0 0 0 6 14.1a2.37 2.37 0 0 0-2.38 2.38 2.38 2.38 0 0 0 .7 1.68 2.38 2.38 0 0 0 1.68.7 2.38 2.38 0 0 0 2.38-2.38 2.37 2.37 0 0 0-.22-.97l2.03-2.03a2.38 2.38 0 0 0 1.43.48 2.38 2.38 0 0 0 2.38-2.38 2.37 2.37 0 0 0-.6-1.55l2.17-2.17 4.8 4.8a2.54 2.54 0 0 1 0 3.59l-5.78 5.78a2.54 2.54 0 0 1-3.58 0L2.6 14.18a2.54 2.54 0 0 1 0-3.59z" />
+                </svg>
+                <span>Git Version Control</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                <span>GitHub</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+                <span>VS Code Editor</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m15 9-6 6M9 9h6v6" />
+                </svg>
+                <span>Browser DevTools</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- COLLABORATION & OTHER -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">
+              <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              Core &amp; Soft Skills
+            </h3>
+            <ul class="skills-list">
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                <span>Problem Solving &amp; Logic</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                </svg>
+                <span>Teamwork &amp; Communication</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                </svg>
+                <span>Technical Documentation</span>
+              </li>
+              <li class="skill-pill">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+                <span>Curiosity &amp; Research</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. FEATURED PROJECTS SECTION
+         ========================================================================== -->
+    <section id="projects" class="section" aria-label="Student Projects Showcase">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects &amp; Practice Work</h2>
+          <p class="section-description">
+            A showcase of school projects, practice exercises, and personal projects handcrafted with pure HTML5, CSS3,
+            and Vanilla JavaScript—highlighting what each project does, the tools used, and key learning outcomes.
+          </p>
+        </div>
+
+        <!-- Filter Buttons (School Projects, Practice Exercises, Personal Projects) -->
+        <div class="project-filters" role="group" aria-label="Project Category Filters">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All Projects</button>
+          <button class="filter-btn" data-filter="school" aria-pressed="false">School Projects</button>
+          <button class="filter-btn" data-filter="practice" aria-pressed="false">Practice Exercises</button>
+          <button class="filter-btn" data-filter="personal" aria-pressed="false">Personal Projects</button>
+        </div>
+
+        <!-- Dynamic Grid Container -->
+        <div class="projects-grid" id="projects-grid-container" aria-live="polite">
+          <!-- Populated dynamically by js/projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. EDUCATION & TIMELINE SECTION
+         ========================================================================== -->
+    <section id="experience" class="section" aria-label="Education and Experience Timeline">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My Journey</span>
+          <h2 class="section-title">Education &amp; Experience</h2>
+          <p class="section-description">
+            A chronological timeline of my academic background and hands-on web development learning journey.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-stem" aria-hidden="true"></div>
+
+          <!-- Timeline Item 1: Current Academics -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">B.S. in Computer Science &amp; Engineering</h3>
+                <span class="timeline-period">Current Undergraduate</span>
+              </div>
+              <div class="timeline-org">School of Engineering &amp; Technology</div>
+              <p class="timeline-description">
+                Studying core computing principles including data structures, algorithms, object-oriented programming,
+                database concepts, and internet technologies.
+              </p>
+              <div class="timeline-chips">
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">Algorithms</span>
+                <span class="tech-tag">Web Fundamentals</span>
+                <span class="tech-tag">Software Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Hands-on Web Development -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Self-Directed Web Projects &amp; Coursework</h3>
+                <span class="timeline-period">2025 — Present</span>
+              </div>
+              <div class="timeline-org">Independent Practice &amp; Academic Projects</div>
+              <p class="timeline-description">
+                Building responsive web interfaces, coding interactive DOM elements with Vanilla JavaScript, creating
+                CSS design systems with custom properties, and practicing web accessibility (WCAG).
+              </p>
+              <div class="timeline-chips">
+                <span class="tech-tag">HTML5 &amp; CSS3</span>
+                <span class="tech-tag">Vanilla JS (ES6+)</span>
+                <span class="tech-tag">Git &amp; GitHub</span>
+                <span class="tech-tag">Responsive Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Foundations -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Beginner Programming &amp; Web Design Foundations</h3>
+                <span class="timeline-period">2023 — 2024</span>
+              </div>
+              <div class="timeline-org">Foundational Studies</div>
+              <p class="timeline-description">
+                Learned foundational computer programming logic, problem-solving methodologies, and basic HTML and CSS
+                layout techniques.
+              </p>
+              <div class="timeline-chips">
+                <span class="tech-tag">Programming Logic</span>
+                <span class="tech-tag">HTML &amp; CSS</span>
+                <span class="tech-tag">Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. CONTACT SECTION
+         ========================================================================== -->
+    <section id="contact" class="section" aria-label="Contact Shilfa Catherine">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Contact &amp; Connect</h2>
+          <p class="section-description">
+            Whether you have a question about my projects, feedback on my code, or a student internship opportunity, I
+            would love to hear from you.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-column">
+            <div class="contact-detail-item">
+              <div class="contact-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-title">Direct Email</div>
+                <a href="mailto:contact@shilfacatherine.dev" class="contact-item-value">contact@shilfacatherine.dev</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-title">GitHub Profile</div>
+                <a href="https://github.com/shilfacatherine" target="_blank" rel="noopener noreferrer"
+                  class="contact-item-value">github.com/shilfacatherine</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-title">LinkedIn Profile</div>
+                <a href="https://linkedin.com/in/shilfa-catherine" target="_blank" rel="noopener noreferrer"
+                  class="contact-item-value">linkedin.com/in/shilfa-catherine</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-card">
+            <!-- Transparent behavior notice per project brief rules -->
+            <div class="form-notice"
+              style="background: rgba(168, 85, 247, 0.08); border: 1px solid var(--border-accent); border-radius: var(--radius-sm); padding: 0.85rem 1rem; margin-bottom: 1.5rem; font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5;">
+              <strong
+                style="color: var(--text-primary); display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.25rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="16" x2="12" y2="12" />
+                  <line x1="12" y1="8" x2="12.01" y2="8" />
+                </svg>
+                Client-Side Demonstration Form
+              </strong>
+              This form is built purely with HTML and Vanilla JavaScript. Submissions are checked and validated locally
+              in your browser without transmitting data to an external server or database.
+            </div>
+
+            <form id="contact-form" class="contact-form" novalidate aria-label="Contact Message Form">
+              <div class="form-honeypot" aria-hidden="true">
+                <label for="website_url">Leave this field blank</label>
+                <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-name" class="form-label">
+                  Your Name
+                  <span class="form-required" aria-hidden="true">*</span>
+                </label>
+                <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. Alex Johnson"
+                  required minlength="2" maxlength="100" autocomplete="name">
+                <span class="field-error-msg" id="name-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">
+                  Email Address
+                  <span class="form-required" aria-hidden="true">*</span>
+                </label>
+                <input type="email" id="contact-email" name="email" class="form-control" placeholder="name@example.com"
+                  required autocomplete="email">
+                <span class="field-error-msg" id="email-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">
+                  Your Message
+                  <span class="form-required" aria-hidden="true">*</span>
+                </label>
+                <textarea id="contact-message" name="message" class="form-control"
+                  placeholder="Describe your inquiry, project feedback, or question..." required minlength="10"
+                  maxlength="2000"></textarea>
+                <span class="field-error-msg" id="message-error" role="alert"></span>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%;">
+                Submit Message
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </button>
+
+              <div id="form-status-area" aria-live="assertive"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       8. FOOTER
+       ========================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        <p>&copy; 2026 Shilfa Catherine. Student Portfolio Website Project. Handcrafted with semantic HTML5, CSS3, and
+          Vanilla JavaScript.</p>
+      </div>
+
+      <div class="social-links footer-social-links" aria-label="Social Profiles">
+        <a href="https://github.com/shilfacatherine" class="social-link" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub Profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/shilfa-catherine" class="social-link" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+        <a href="mailto:contact@shilfacatherine.dev" class="social-link" aria-label="Direct Email Contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+        </a>
+      </div>
+
+      <button id="back-to-top-btn" class="back-to-top-btn" aria-label="Scroll back to top of page">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m18 15-6-6-6 6" />
+        </svg>
+        Back to top
+      </button>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript Application Entry -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
