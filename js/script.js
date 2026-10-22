@@ -520,18 +520,23 @@ function initContactForm() {
       sessionStorage.setItem(LAST_SUBMIT_KEY, String(Date.now()));
       setLoadingState(submitBtn, false);
 
+      const mailtoUrl = `mailto:shilfabiju@gmail.com?subject=Portfolio%20Inquiry%20from%20${encodeURIComponent(payload.name)}&body=${encodeURIComponent(payload.message)}`;
+      
+      try {
+        window.location.href = mailtoUrl;
+      } catch (err) {
+        // Fallback handled by the link below
+      }
+
       showStatus(
         statusContainer,
         'success',
         `<strong>Thank you, ${escapeHtml(payload.name)}!</strong><br>
-         Your message has been validated successfully.<br><br>
-         <span style="font-size: 0.875rem; color: var(--text-secondary); display: block; margin-top: 0.35rem;">
-           <strong>Notice:</strong> As required by the student project guidelines, this website operates entirely on client-side HTML, CSS, and Vanilla JavaScript with <em>no backend server or database</em>. Your message details were validated in your browser and were not transmitted externally.
-         </span>
+         Opening your default email app to send your message directly to <strong>shilfabiju@gmail.com</strong>.<br>
          <div style="margin-top: 0.85rem;">
-           <a href="mailto:contact@shilfacatherine.dev?subject=Portfolio%20Inquiry%20from%20${encodeURIComponent(payload.name)}&body=${encodeURIComponent(payload.message)}" class="btn btn-outline btn-sm" style="display: inline-flex; align-items: center; gap: 0.4rem;">
+           <a href="${mailtoUrl}" class="btn btn-outline btn-sm" style="display: inline-flex; align-items: center; gap: 0.4rem;">
              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-             Send directly via your email client
+             Click here if your email client didn't open
            </a>
          </div>`
       );
