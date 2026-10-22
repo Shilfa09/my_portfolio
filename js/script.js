@@ -19,7 +19,7 @@ const projectsData = [
     imageAlt: 'TaskFlow student study board screenshot showing Kanban task columns and priorities',
     tags: ['HTML5 (Semantic)', 'CSS Grid & Flexbox', 'Vanilla JavaScript (ES6+)', 'LocalStorage API'],
     learned: 'Designed an intuitive mobile-first interface from scratch, implemented clean DOM creation and event delegation without external libraries, and used browser LocalStorage so assignments persist across page refreshes.',
-    githubUrl: 'https://github.com/shilfacatherine/taskflow-planner',
+    githubUrl: 'https://github.com/Shilfa09/taskflow-planner',
     demoUrl: '#projects'
   },
   {
@@ -33,8 +33,8 @@ const projectsData = [
     imageAlt: 'DevCanvas accessible color contrast ratio testing utility preview',
     tags: ['HTML5 Form Controls', 'CSS Custom Properties', 'Vanilla JavaScript', 'Math Algorithms'],
     learned: 'Studied digital accessibility standards in depth, programmed the mathematical relative luminance formula in pure JavaScript, and designed an accessible interface with visible keyboard focus indicators.',
-    githubUrl: 'https://github.com/shilfacatherine/dev-canvas-palette',
-    demoUrl: 'https://github.com/shilfacatherine/dev-canvas-palette'
+    githubUrl: 'https://github.com/Shilfa09/dev-canvas-palette',
+    demoUrl: 'https://github.com/Shilfa09/dev-canvas-palette'
   },
   {
     id: 'pulse-storefront',
@@ -47,8 +47,8 @@ const projectsData = [
     imageAlt: 'Pulse responsive e-commerce storefront layout preview',
     tags: ['HTML5 (Semantic)', 'Modern CSS3', 'Vanilla JavaScript', 'Accessible ARIA Modals'],
     learned: 'Practiced responsive multi-column layouts using CSS Grid without frameworks, built keyboard-friendly modal focus traps using vanilla event listeners, and optimized page load speed.',
-    githubUrl: 'https://github.com/shilfacatherine/pulse-storefront',
-    demoUrl: 'https://github.com/shilfacatherine/pulse-storefront'
+    githubUrl: 'https://github.com/Shilfa09/pulse-storefront',
+    demoUrl: 'https://github.com/Shilfa09/pulse-storefront'
   }
 ];
 
